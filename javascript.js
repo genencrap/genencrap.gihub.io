@@ -1,20 +1,20 @@
 document.getElementById('mainimagenav').addEventListener('click', function() {
-    window.location.href = 'main_html.html'; // 로그인 페이지로 이동
+    window.location.href = 'index.html';
 });
 document.getElementById('pageintronav').addEventListener('click', function() {
-    window.location.href = 'pageintro.html'; // 페이지 소개 페이지로 이동
+    window.location.href = 'pageintro.html'; 
 });
 document.getElementById('calendarnav').addEventListener('click', function() {
-    window.location.href = 'calendar.html'; // 로그인 페이지로 이동
+    window.location.href = 'calendar.html';
 });
 document.getElementById('schedulenav','mainScheduleboxbutton').addEventListener('click', function() {
-    window.location.href = 'schedule.html'; // 페이지 소개 페이지로 이동
+    window.location.href = 'schedule.html'; 
 });
 document.getElementById('aboutnav').addEventListener('click', function() {
-    window.location.href = 'about.html'; // 로그인 페이지로 이동
+    window.location.href = 'about.html';
 });
 document.getElementById('loginnav').addEventListener('click', function() {
-    window.location.href = 'login.html'; // 로그인 페이지로 이동
+    window.location.href = 'login.html';
 });
 
 document.getElementById('loginForm').addEventListener('submit', function(event) {
