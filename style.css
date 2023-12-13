@@ -1,0 +1,174 @@
+/* style.css 파일 */
+body {
+    background-color:rgb(255,250, 238);
+}
+
+/* -----------  네비개이션 바 ----------------- */
+.navbar {
+    overflow: hidden;
+    background-color: #77defa; /* 메뉴바 배경 색상 */
+    align-items: right;
+}
+
+.navbar a {
+    float: left; /* 메뉴 아이템을 오른쪽으로 정렬 */
+    display: block;
+    color: black; /* 메뉴 아이템 글자 색상 */
+    text-align: center;
+    padding: 14px 16px; /* 패딩으로 메뉴 아이템 크기 조절 */
+    text-decoration: none; /* 링크 밑줄 제거 */
+}
+
+#mainimage {
+    float:left;
+}
+
+/* 마우스 오버 효과 */
+.navbar a:hover {
+    background-color: #bbc4c6;
+    color: black;
+    font:bold;
+    border-collapse:collapse;
+}
+
+.maintextkr {
+    display: flex; 
+    justify-content: center; 
+    align-self: center;
+    font-size:40px;
+    font-weight:bold;
+    
+
+}
+
+.main_image{
+    display: flex; 
+    justify-content: center; 
+    align-self: center;
+  
+}
+#main_image {
+    max-width:80%;
+    max-height: 70%;
+}
+
+@keyframes bigger {
+    5% {size:105%;}
+    10%{size:615%;}
+    100%{size:100%;}
+}
+#calendartext, #abouttext, #logintext, #pageintrotext, #scheduletext{
+    display: flex; 
+    justify-content: center; 
+    align-self: center;
+    font-size:40px;
+    font-weight:bold;
+    
+}
+#aboutsection{
+    display: flex; 
+    justify-content: center; 
+    align-self: center;
+    font-size:40px;
+    font-weight:bold;
+}
+
+/* ---------------------------------- 달력 스타일링 ---------------------------------- */
+.calendar{
+    display:flex;
+    justify-content: center; 
+}
+#calendar{
+    display: relative; 
+    justify-content: center; 
+    align-self: center;
+
+}
+
+#calendar td {
+   background-color: #6fd4eb;
+    text-align: center;
+    padding-left: 8px;
+    padding-right:60px;
+    padding-top:6px;
+    padding-bottom:35px;
+
+}
+#calendar th {
+    background-color: rgb(192, 233, 253);
+}
+
+#calendar {
+    align-self: center;
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+}
+
+#calendar:hover{
+    background-color: #363636;
+}
+
+#calendar td:hover{
+    animation-name:bigger;
+    animation-duration:2s;
+    animation-iteration-count:1;
+    background-color: #9e0d0d;
+}
+
+.schedule-bar-container {
+    background-color: red;
+}
+
+#bar{
+    display:relative;
+}
+
+
+
+/*------------------- login -------------------*/
+.login-container {
+    display:flex;
+    justify-content: center; 
+}
+/*----------------------pageintro ------------*/
+.welcome-section, .features-section, .explain , footer{
+    padding: 20px;
+    text-align: left;
+}
+.explain p{
+    text-align: left;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+/*------------------- schedule -----------------------*/
+.schedule-form {
+    display: flex; 
+    justify-content: center; 
+    align-self: center;
+
+    flex-direction: column;
+    max-width: 900px;
+    
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+}
+
+.schedule-form input[type="text"],
+.schedule-form input[type="date"],
+.schedule-form input[type="number"] {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+}
+
+.schedule-form button {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: blue;
+    color: white;
+    border: none;
+}
