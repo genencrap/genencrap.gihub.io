@@ -24,5 +24,4 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     const password = document.getElementById('password').value;
 
     console.log('로그인 시도:', username, password);
-    // 여기에 로그인 로직 추가
 });
